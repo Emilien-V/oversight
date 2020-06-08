@@ -12,6 +12,7 @@ public class GameManager : Singleton<GameManager>
     public string roomCode = "error";
     public bool multidevice;
     public string codeFinal;
+    public string QuestStep = "0";
 
     void Update()
     {

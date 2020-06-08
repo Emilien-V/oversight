@@ -17,7 +17,7 @@ public class SocialRatingSystemManagement : MonoBehaviour
     void Update()
     {
         creditSocialValue = GameManager.Instance.CreditSocial;
-        Debug.Log(" creditSocialValue : " + creditSocialValue);
+        // Debug.Log(" creditSocialValue : " + creditSocialValue);
 
         if (creditSocialValue >= 180)
         {

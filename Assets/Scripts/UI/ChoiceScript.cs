@@ -48,12 +48,14 @@ public class ChoiceScript : MonoBehaviour
         Choice04.SetActive(false);
         // noButton = true;
         ChoiceMade = 2;
-
     }
 
     //Dialogue 2 
     public void ChoiceOption1_Dialogue2()
     {
+        GameManager.Instance.QuestStep = "1.0";
+        Debug.Log("questStep : " + GameManager.Instance.QuestStep);
+
         TextBox.GetComponent<Text>().text = "Merci pour votre achat, au revoir.";
         Choice01.SetActive(false);
         Choice02.SetActive(false);
@@ -62,6 +64,9 @@ public class ChoiceScript : MonoBehaviour
     }
     public void ChoiceOption2_Dialogue2()
     {
+        GameManager.Instance.QuestStep = "2.0";
+        Debug.Log("questStep : " + GameManager.Instance.QuestStep);
+
         TextBox.GetComponent<Text>().text = "Ne reviens jamais ici voleur, j'espère que tu va perdre beaucoup de points !";
         Choice01.SetActive(false);
         Choice02.SetActive(false);
@@ -83,16 +88,7 @@ public class ChoiceScript : MonoBehaviour
                 TextBox.GetComponent<Text>().text = initialText;
                 Choice01.SetActive(true);
                 Choice02.SetActive(true);
-                // Choice03.SetActive(true);
-                // Choice04.SetActive(true);
             }
         }
-
-        // if (noButton == true)
-        // {
-        //     Choice01.SetActive(true);
-        //     Choice02.SetActive(true);
-        // }
-
     }
 }
