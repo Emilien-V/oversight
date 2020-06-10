@@ -1,6 +1,7 @@
 ﻿
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class UIAppear : MonoBehaviour
 {
@@ -8,6 +9,10 @@ public class UIAppear : MonoBehaviour
     [SerializeField] private GameObject TextOnCharacter;
     private bool active;
     // à coté du perso -> ecrire "appuyer sur E"  -> afficher l'UIInterface
+    void Start()
+    {
+        Cursor.visible = false;
+    }
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -19,7 +24,9 @@ public class UIAppear : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            // customImage.enabled = false;
             active = false;
+            Cursor.visible = false;
         }
     }
     void Update()
@@ -35,10 +42,12 @@ public class UIAppear : MonoBehaviour
             {
                 // Debug.Log("E key was pressed.");
                 customImage.enabled = true;
+                Cursor.visible = true;
             }
         }
         else
         {
+            Cursor.visible = false;
             customImage.enabled = false;
             TextOnCharacter.GetComponent<Renderer>().enabled = false;
             //Si UI text 2d :

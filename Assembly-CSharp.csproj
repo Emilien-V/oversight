@@ -69,6 +69,7 @@
      <Compile Include="Assets\Scripts\Networking\Client.cs" />
      <Compile Include="Assets\Scripts\Quest\MainQuest.cs" />
      <Compile Include="Assets\Scripts\Quest\Step1.cs" />
+     <Compile Include="Assets\Scripts\Quest\Step2.cs" />
      <Compile Include="Assets\Scripts\Scene\ReturnHomeScene.cs" />
      <Compile Include="Assets\Scripts\Scene\SceneChanger.cs" />
      <Compile Include="Assets\Scripts\Scene\SceneChangerV2.cs" />
@@ -85,9 +86,14 @@
      <Compile Include="Assets\Scripts\SocialRatingSystem\ZoneDetection.cs" />
      <Compile Include="Assets\Scripts\UI\AppearExplication.cs" />
      <Compile Include="Assets\Scripts\UI\ChoiceScript.cs" />
+     <Compile Include="Assets\Scripts\UI\DialogueCompteurElectrique.cs" />
+     <Compile Include="Assets\Scripts\UI\DialogueFacteur.cs" />
      <Compile Include="Assets\Scripts\UI\DialogueHacker.cs" />
+     <Compile Include="Assets\Scripts\UI\DialogueMaisonAmi.cs" />
+     <Compile Include="Assets\Scripts\UI\DialoguePolicier.cs" />
      <Compile Include="Assets\Scripts\UI\ShowCodeRoom.cs" />
      <Compile Include="Assets\Scripts\UI\UIAppear.cs" />
+     <Compile Include="Assets\Scripts\UI\UIAppearPolicier.cs" />
      <Compile Include="Assets\Scripts\Utilities\Convert.cs" />
      <Compile Include="Assets\Scripts\Utilities\GetData.cs" />
      <Compile Include="Assets\Scripts\Utilities\Identification.cs" />

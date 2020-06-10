@@ -13,6 +13,7 @@ public class GameManager : Singleton<GameManager>
     public bool multidevice;
     public string codeFinal;
     public string QuestStep = "0";
+    public bool blockUserActive;
 
     void Update()
     {

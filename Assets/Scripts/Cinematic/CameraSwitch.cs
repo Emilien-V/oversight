@@ -20,39 +20,40 @@
 //     void Update()
 //     {
 
-//         if (active == true)
+//         // if (active == true)
+//         // {
+//         CinematicTimer -= Time.deltaTime;
+//         ChangeCameraTimer -= Time.deltaTime;
+//         timeToDisplayExplication -= Time.deltaTime;
+//         Debug.Log("timeToDisplayExplication : " + timeToDisplayExplication);
+
+//         if (CinematicTimer >= 0)
 //         {
-//             CinematicTimer -= Time.deltaTime;
-//             ChangeCameraTimer -= Time.deltaTime;
-//             timeToDisplayExplication -= Time.deltaTime;
-//             Debug.Log("timeToDisplayExplication : " + timeToDisplayExplication);
+//             Debug.Log("ok let's go ");
+//             cameraOne.transform.Translate(Vector3.forward * Time.deltaTime * 9);
 
-//             if (CinematicTimer >= 0)
-//             {
-//                 Debug.Log("ok BBb ");
-//                 cameraOne.transform.Translate(Vector3.forward * Time.deltaTime * 9);
-
-//                 ChangeCameraTimer = 0.3f;
-//                 timeToDisplayExplication = 8f;
-//             }
-
-//             if (ChangeCameraTimer <= 0)
-//             {
-//                 Debug.Log("ok changer de cam");
-//                 textExplication.enabled = true;
-//                 // cameraOne.SetActive(false);
-//                 // cameraTwo.SetActive(true);
-//             }
-
-//             if (timeToDisplayExplication <= 0)
-//             {
-//                 Debug.Log("zouzou");
-//                 textExplication.enabled = false;
-//                 cameraOne.SetActive(false);
-//                 cameraTwo.SetActive(true);
-//                 active = false;
-//             }
+//             ChangeCameraTimer = 0.3f;
+//             timeToDisplayExplication = 3f;
 //         }
+
+//         if (ChangeCameraTimer <= 0)
+//         {
+//             Debug.Log("ok changer de cam");
+//             // textExplication.enabled = true;
+//             // cameraOne.SetActive(false);
+//             // cameraTwo.SetActive(true);
+//         }
+
+//         if (timeToDisplayExplication <= 0)
+//         {
+//             Debug.Log("fini !");
+//             textExplication.enabled = true;
+//             // textExplication.enabled = false;
+//             cameraOne.SetActive(false);
+//             cameraTwo.SetActive(true);
+//             active = false;
+//         }
+//         // }
 
 //     }
 // }

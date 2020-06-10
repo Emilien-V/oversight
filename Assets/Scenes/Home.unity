@@ -850,7 +850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.36078432, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1022,9 +1022,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.15
-  m_Text: "Pour une immersion totale dans Oversight, le jeu se d\xE9rouledans univers
-    trans-device.\nLors de votre connexion au jeu, vous devrez connecter votre t\xE9l\xE9phone
-    afin d'int\xE9ragir avec le monde totalitaire qu'est Oversight."
+  m_Text: "Pour une immersion totale dans Oversight, le jeu se d\xE9roule dans un
+    univers trans-device.\nLors de votre connexion au jeu, vous devrez connecter
+    votre t\xE9l\xE9phone afin d'int\xE9ragir avec le monde totalitaire qu'est Oversight."
 --- !u!222 &1377142725
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1101,7 +1101,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Passer
+  m_Text: JOUER
 --- !u!222 &1447493308
 CanvasRenderer:
   m_ObjectHideFlags: 0
